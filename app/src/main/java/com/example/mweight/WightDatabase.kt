@@ -1,6 +1,5 @@
 package com.example.mweight
 
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope

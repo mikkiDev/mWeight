@@ -29,7 +29,6 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.mweight.ui.theme.MWeightTheme
 
 @Composable
 fun HomeScreen(onNavigateToApp: () -> Unit) {
@@ -44,7 +43,7 @@ fun HomeScreen(onNavigateToApp: () -> Unit) {
             modifier = Modifier.padding(horizontal = 10.dp).padding(vertical = 50.dp),
             horizontalArrangement = Arrangement.End
         ) {
-            val version = "1.0"
+            val version = "1.1"
             Text(
                 text = "version $version",
                 color = MaterialTheme.colorScheme.secondary

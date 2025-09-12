@@ -4,7 +4,6 @@ import android.graphics.Paint
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -18,7 +17,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
-import androidx.compose.ui.graphics.toColorLong
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import java.text.SimpleDateFormat
