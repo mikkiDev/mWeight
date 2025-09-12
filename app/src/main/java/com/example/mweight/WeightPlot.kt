@@ -4,6 +4,7 @@ import android.graphics.Paint
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -150,7 +151,7 @@ private fun DrawScope.drawChartGrid(
         drawContext.canvas.nativeCanvas.drawText(
             formatDateForChart(entry.date),
             xPos,
-            canvasHeight + paddingBottom + 20f,
+            canvasHeight + paddingBottom + 40f,
             Paint().apply {
                 color = textColor.toArgb()
                 textSize = 10.sp.toPx()
