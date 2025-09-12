@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mWeight</string>
+    <string name="weight_screen_name">mWeight_WeightScreen</string>
+    <string name="app_author">mikkiDev</string>
+
+    <string name="version">si</string>
+</resources>
