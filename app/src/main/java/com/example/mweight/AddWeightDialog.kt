@@ -59,9 +59,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.max
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.Popup
+import java.math.RoundingMode
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import kotlin.math.round
 
 @Composable
 fun AddWeightDialog(onDismissRequest: () -> Unit, onConfirmation: (Float, String) -> Unit) {
@@ -296,14 +298,4 @@ fun DatePickerDocked(
 private fun convertMillisToDate(millis: Long): String {
     val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
     return formatter.format(Date(millis))
-}
-
-
-private fun convertDateToMillis(dateString: String): Long? {
-    return try {
-        val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        formatter.parse(dateString)?.time
-    } catch (e: Exception) {
-        null
-    }
 }

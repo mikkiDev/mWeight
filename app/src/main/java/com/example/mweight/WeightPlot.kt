@@ -4,6 +4,7 @@ import android.graphics.Paint
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -29,6 +30,9 @@ fun WeightChart(
     modifier: Modifier = Modifier
 ) {
     if (entries.size < 2) {
+
+        Spacer(Modifier.height(10.dp))
+
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -44,6 +48,9 @@ fun WeightChart(
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
+
+        Spacer(Modifier.height(10.dp))
+
         return
     }
 
